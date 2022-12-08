@@ -61,12 +61,16 @@ If you want to learn more about building native executables, please consult http
 
 ## Creating a Docker container
 
-A docker image using fast-jar:
+Add Docker extension using:
+```shell script
+mvn quarkus:add-extension -Dextensions="container-image-docker"
+```
+A Docker image using fast-jar:
 ```shell script
 mvn package -Dquarkus.container-image.build=true -Dquarkus.package.type=jar -Dquarkus.container-image.tag=jvm
 ```
 
-A docker image using native binary file:
+A Docker image using native binary file:
 ```shell script
 mvn package -Dquarkus.container-image.build=true -Pnative -Dquarkus.native.container-build=true -Dquarkus.container-image.tag=native
 ```
