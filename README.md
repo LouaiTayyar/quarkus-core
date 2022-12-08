@@ -1,4 +1,4 @@
-# rest-book Project
+# quarkus-core
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
