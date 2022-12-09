@@ -1,5 +1,14 @@
 # Quarkus Core
 
+## Tools
+
+* Java
+* Quarkus
+* RestEasy (JAX-RS)
+* JUnit
+* Rest Assured
+* Docker
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 ## Running the application
