@@ -114,12 +114,13 @@ Access Keycloak through the localhost and login using the username and password 
 
 ## API endpoints
 
-issuer	"http://localhost:49158/realms/quarkus"
-authorization_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/auth"
-token_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/token"
-introspection_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/token/introspect"
-userinfo_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/userinfo"
-end_session_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/logout"
+
+* issuer	"http://localhost:49158/realms/quarkus"
+* authorization_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/auth"
+* token_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/token"
+* introspection_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/token/introspect"
+* userinfo_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/userinfo"
+* end_session_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/logout"
 
 Create a POST request, with the body variables:
 * username
