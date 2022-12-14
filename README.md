@@ -143,3 +143,5 @@ For all the possible Keycloak API calls, check the following link: https://www.k
 ## Quarkus + Keycloak
 
 https://quarkus.io/guides/security-keycloak-authorization
+
+After configuration, quarkus will spin up a keycloak container when you run it
