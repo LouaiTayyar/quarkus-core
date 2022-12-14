@@ -125,7 +125,7 @@ http://localhost:8080/realms/{YOUR-REALM-NAME}/protocol/openid-connect/token
 to **log in** and get back the bearer token for the user you provided the credentials of. 
 
 
-### Other useful endpoints:
+### Main API endpoints
 
 * issuer	"http://localhost:49158/realms/{YOUR-REALM-NAME}"
 * authorization_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/auth"
@@ -135,7 +135,7 @@ to **log in** and get back the bearer token for the user you provided the creden
 * end_session_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/logout"
 
 ## Bearer Token
-Use the bearer token as an access token for authentication of any API calls that will be made
+The bearer token is used for authentication of any API calls that will be made
 
 The following is an example of a request made to the Keycloak API:
 **GET**  http://localhost:8080/admin/realms/{YOUR-REALM-NAME}/users   -  This will return the data of all the users in the specified realm
