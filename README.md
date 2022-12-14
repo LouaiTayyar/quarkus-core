@@ -110,7 +110,7 @@ docker run --name keycloak -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=ad
 ```
 > **Note:** Keycloak should usually be accompanied by a database and HTTPS certification for production. This docker container is just an easy way to quickly open a Keycloak instance to test and explore.
 
-Access Keycloak through the localhost and login using the username and password that were set in the docker command ( admin & admin in this case ). Then create a new realm ( a space where users can login ), separate from the master realm ( the realm with the administrator account where other realms are configured ). After creating a new realm, create a new client and a new user inside the new realm. 
+Access Keycloak through the localhost and login using the username and password that were set in the docker command ( admin & admin in this case ). Then create a new realm ( a space where users can login and clients can be added ), separate from the master realm ( the realm with the administrator console where other realms are configured ). After creating a new realm, create a new client and a new user inside the new realm. 
 
 ## API endpoints
 
