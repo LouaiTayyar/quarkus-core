@@ -138,7 +138,8 @@ to log in and get back the bearer token for the user you provided the credential
 ## Bearer Token
 The bearer token is used for authentication of any API calls that will be made
 
-The following is an example of a request made to the Keycloak API
+The following is an example of a request made to the Keycloak API:
+
 **GET**  http://localhost:8080/admin/realms/{REALM-NAME}/users   -  This will return the data of all the users in the specified realm
 
 For all the possible Keycloak API calls, check the following link: 
