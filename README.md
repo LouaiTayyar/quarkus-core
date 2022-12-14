@@ -125,6 +125,15 @@ http://localhost:8080/realms/{YOUR-REALM-NAME}/protocol/openid-connect/token
 to **log in** and get back the bearer token for the user you provided the credentials of. 
 
 
+### Other useful endpoints:
+
+* issuer	"http://localhost:49158/realms/{YOUR-REALM-NAME}"
+* authorization_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/auth"
+* token_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/token"
+* introspection_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/token/introspect"
+* userinfo_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/userinfo"
+* end_session_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/logout"
+
 ## Bearer Token
 Use the bearer token as an access token for authentication of any API calls that will be made
 
@@ -138,13 +147,4 @@ For all the possible Keycloak API calls, check the following link: https://www.k
 https://quarkus.io/guides/security-keycloak-authorization
 
 After configuration, quarkus will spin up a keycloak container when you run it
-
-### Endpoints taken from my quarkus realm:
-
-* issuer	"http://localhost:49158/realms/quarkus"
-* authorization_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/auth"
-* token_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/token"
-* introspection_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/token/introspect"
-* userinfo_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/userinfo"
-* end_session_endpoint	"http://localhost:49158/realms/quarkus/protocol/openid-connect/logout"
 
