@@ -114,33 +114,36 @@ Access Keycloak through the localhost and login using the username and password 
 
 ## API endpoints
 
-After creating a realm, client, and user. Create a POST request, with the body variables:
+### Log-in/token endpoint
+After creating a realm, client, and user. Create a **POST** request, with the body variables:
 * username
 * password
 * grant_type
 * client_id
 
 to the following endpoint:
-http://localhost:8080/realms/{YOUR-REALM-NAME}/protocol/openid-connect/token
-to **log in** and get back the bearer token for the user you provided the credentials of. 
+http://localhost:8080/realms/{REALM-NAME}/protocol/openid-connect/token
+to log in and get back the bearer token for the user you provided the credentials of. 
 
 
 ### Main API endpoints
 
-* issuer	"http://localhost:49158/realms/{YOUR-REALM-NAME}"
-* authorization_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/auth"
-* token_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/token"
-* introspection_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/token/introspect"
-* userinfo_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/userinfo"
-* end_session_endpoint	"http://localhost:49158/realms/{YOUR-REALM-NAME}/protocol/openid-connect/logout"
+* issuer	"http://localhost:49158/realms/{REALM-NAME}"
+* authorization_endpoint	"http://localhost:8080/realms/{REALM-NAME}/protocol/openid-connect/auth"
+* token_endpoint	"http://localhost:8080/realms/{REALM-NAME}/protocol/openid-connect/token"
+* introspection_endpoint	"http://localhost:8080/realms/{REALM-NAME}/protocol/openid-connect/token/introspect"
+* userinfo_endpoint	"http://localhost:8080/realms/{REALM-NAME}/protocol/openid-connect/userinfo"
+* end_session_endpoint	"http://localhost:8080/realms/{REALM-NAME}/protocol/openid-connect/logout"
 
 ## Bearer Token
 The bearer token is used for authentication of any API calls that will be made
 
 The following is an example of a request made to the Keycloak API:
-**GET**  http://localhost:8080/admin/realms/{YOUR-REALM-NAME}/users   -  This will return the data of all the users in the specified realm
+**GET**  http://localhost:8080/admin/realms/{REALM-NAME}/users   -  This will return the data of all the users in the specified realm
 
-For all the possible Keycloak API calls, check the following link: https://www.keycloak.org/docs-api/20.0.1/rest-api/index.html#_overview
+For all the possible Keycloak API calls, check the following link: 
+https://www.keycloak.org/docs-api/20.0.1/rest-api/index.html#_overview
+
 
 ## Quarkus + Keycloak
 
